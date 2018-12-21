@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelListCell" rowHeight="68" id="Y8d-Ea-Z15" customClass="ChannelListCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y8d-Ea-Z15" id="UNL-lP-qHm">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempProfile" translatesAutoresizingMaskIntoConstraints="NO" id="SyX-te-e8v">
+                        <rect key="frame" x="16" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="tDJ-Gh-IqS"/>
+                            <constraint firstAttribute="width" constant="50" id="yPP-LM-dhW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ProjectElon - Study Motivation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue2-w6-qh8">
+                        <rect key="frame" x="74" y="25" width="184.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SyX-te-e8v" firstAttribute="top" secondItem="UNL-lP-qHm" secondAttribute="top" constant="8" id="BZN-In-Lvx"/>
+                    <constraint firstItem="Ue2-w6-qh8" firstAttribute="centerY" secondItem="SyX-te-e8v" secondAttribute="centerY" id="D2e-S8-6fL"/>
+                    <constraint firstItem="SyX-te-e8v" firstAttribute="leading" secondItem="UNL-lP-qHm" secondAttribute="leading" constant="16" id="DTg-D6-zcn"/>
+                    <constraint firstItem="Ue2-w6-qh8" firstAttribute="leading" secondItem="SyX-te-e8v" secondAttribute="trailing" constant="8" id="F7w-Wm-SSI"/>
+                    <constraint firstAttribute="bottom" secondItem="SyX-te-e8v" secondAttribute="bottom" constant="8" id="oOC-Fg-LXg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-1684" y="389.5052473763119"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tempProfile" width="576" height="576"/>
+    </resources>
+</document>

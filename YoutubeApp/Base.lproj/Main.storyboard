@@ -1,24 +1,497 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CZQ-hp-7iO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="0nv-wz-LGe">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tabBarController id="CZQ-hp-7iO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fln-4j-wa4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PfD-cM-7hc" kind="relationship" relationship="viewControllers" id="gGe-GM-JIj"/>
+                        <segue destination="sfZ-T2-RWf" kind="relationship" relationship="viewControllers" id="J2U-1F-poJ"/>
+                        <segue destination="xLb-lo-4j6" kind="relationship" relationship="viewControllers" id="cY0-Q6-LKe"/>
+                        <segue destination="pev-fA-voP" kind="relationship" relationship="viewControllers" id="Xka-c2-gmI"/>
+                        <segue destination="VrQ-zN-gTN" kind="relationship" relationship="viewControllers" id="ehh-Ph-n6E"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnV-eb-j1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="-88"/>
+        </scene>
+        <!--Home Controller-->
+        <scene sceneID="tBr-c9-W2I">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeController" id="MQ7-AS-ZSg" customClass="HomeController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wdj-y4-iGE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7kp-AF-RB7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7kp-AF-RB7" id="bu8-P0-L7g">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MQ7-AS-ZSg" id="ONB-Fd-UHp"/>
+                            <outlet property="delegate" destination="MQ7-AS-ZSg" id="B8t-ri-0H1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="P0y-hP-vje">
+                        <barButtonItem key="leftBarButtonItem" image="youtubeLogo" id="WuA-1R-UrY"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="profile" id="edf-D6-CKx">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="uQe-wF-974">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="video" id="PmJ-QT-Ghk">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jui-f1-H0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="-1535"/>
+        </scene>
+        <!--Trending Controller-->
+        <scene sceneID="PYw-bs-fh7">
+            <objects>
+                <tableViewController storyboardIdentifier="TrendingController" id="FrL-8W-KXN" customClass="TrendingController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="b0g-pa-RFG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ad0-3k-IWt">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ad0-3k-IWt" id="caj-k1-JgI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FrL-8W-KXN" id="4T4-gu-qsW"/>
+                            <outlet property="delegate" destination="FrL-8W-KXN" id="HPk-Pi-e0H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ap5-QZ-KDa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="youtubeLogo" id="UKS-9L-tCd"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="profile" id="X3J-qL-3nn">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="MPg-36-tcF">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="video" id="pQY-3Q-Sed">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBD-i7-oQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="-822"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="VWQ-Jm-YwT">
+            <objects>
+                <navigationController id="sfZ-T2-RWf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trending" image="trending" id="Vbc-Jn-Cqp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="YDe-24-3BZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FrL-8W-KXN" kind="relationship" relationship="rootViewController" id="adK-5E-xiI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQr-eX-DmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="-821"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="LVx-3n-zoC">
+            <objects>
+                <navigationController id="PfD-cM-7hc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="zOY-aI-7Yf">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="r1e-ES-GtW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MQ7-AS-ZSg" kind="relationship" relationship="rootViewController" id="6QR-rH-687"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIP-We-1eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="-1535"/>
+        </scene>
+        <!--Subscription Controller-->
+        <scene sceneID="cTE-UX-qeK">
+            <objects>
+                <tableViewController storyboardIdentifier="SubscriptionController" id="KuI-9g-GgP" customClass="SubscriptionController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0bm-CX-AQo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GIf-8q-jOQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GIf-8q-jOQ" id="uOB-NY-3HM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KuI-9g-GgP" id="Rit-mX-24l"/>
+                            <outlet property="delegate" destination="KuI-9g-GgP" id="2tp-Vq-tY6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Cpi-Jv-Mvu">
+                        <barButtonItem key="leftBarButtonItem" image="youtubeLogo" id="deX-It-fGl"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="profile" id="yhv-mC-hXV">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="UjX-iO-Lbl">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem image="video" id="ukX-ag-mux">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHO-fv-1dR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="-89"/>
+        </scene>
+        <!--Channel List Controller-->
+        <scene sceneID="lOd-Ys-Upr">
+            <objects>
+                <tableViewController storyboardIdentifier="ChannelListController" id="1uY-rT-IWl" customClass="ChannelListController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fsj-Jn-3bi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2Gu-fy-rcR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Gu-fy-rcR" id="HaF-Ip-AEV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1uY-rT-IWl" id="rST-7A-l8X"/>
+                            <outlet property="delegate" destination="1uY-rT-IWl" id="LHb-7S-0dI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="EUG-mV-rA0">
+                        <leftBarButtonItems>
+                            <barButtonItem image="back" id="Exi-PG-iyp">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="handleBack:" destination="1uY-rT-IWl" id="ksa-0q-b9U"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Channel list" id="Tjo-0D-tTG">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="more" id="Iko-mL-ww1">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="vit-wU-w98">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRb-0E-Ujv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1975" y="-94"/>
+        </scene>
+        <!--Library Controller-->
+        <scene sceneID="4fq-pZ-7NM">
+            <objects>
+                <tableViewController storyboardIdentifier="LibraryController" id="Ipd-xM-MPR" customClass="LibraryController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rC6-mq-ILa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zID-pN-fbF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zID-pN-fbF" id="aP4-k8-uNS">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ipd-xM-MPR" id="hb3-yr-Ce1"/>
+                            <outlet property="delegate" destination="Ipd-xM-MPR" id="Wwu-s9-gjJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wZK-hG-nNb">
+                        <barButtonItem key="leftBarButtonItem" image="youtubeLogo" id="lat-B6-LXg"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="profile" id="dza-8Z-H3L">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="I5i-2Q-6Fa">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="video" id="sED-6x-vTP">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GrK-0V-C4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1238" y="1327"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="wEY-4v-Nqx">
+            <objects>
+                <navigationController id="VrQ-zN-gTN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" image="Library" id="6gm-E6-99S"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cg9-QM-MSf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ipd-xM-MPR" kind="relationship" relationship="rootViewController" id="LSO-O0-AgG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oV-Dk-qb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="1328"/>
+        </scene>
+        <!--Inbox-->
+        <scene sceneID="pj6-Es-1Hb">
+            <objects>
+                <navigationController id="pev-fA-voP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inbox" image="inbox" id="hYv-1o-Cdh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="I1Y-dR-pgD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hKw-86-aTv" kind="relationship" relationship="rootViewController" id="Ig3-mn-5zT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVe-4p-NDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="598"/>
+        </scene>
+        <!--Inbox Controller-->
+        <scene sceneID="Hv5-7j-e9h">
+            <objects>
+                <viewController storyboardIdentifier="InboxController" id="hKw-86-aTv" customClass="InboxController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bsj-JN-6P5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWm-yd-EWp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kB4-HP-QIk">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="49"/>
+                                        <state key="normal" title="MESSAGES">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleMessages:" destination="hKw-86-aTv" eventType="touchUpInside" id="uRw-tX-iHW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAW-vz-MYu">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="49"/>
+                                        <state key="normal" title="NOTIFICATIONS">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleNotifications:" destination="hKw-86-aTv" eventType="touchUpInside" id="xce-oN-qjG"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SJ-co-MzG">
+                                        <rect key="frame" x="0.0" y="47" width="187.5" height="2"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="TlO-C8-ltl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="4cY-jk-Fxi"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAW-vz-MYu" secondAttribute="bottom" id="Eg6-li-dAT"/>
+                                    <constraint firstItem="2SJ-co-MzG" firstAttribute="leading" secondItem="zWm-yd-EWp" secondAttribute="leading" id="F4t-dQ-K3W"/>
+                                    <constraint firstItem="kB4-HP-QIk" firstAttribute="top" secondItem="zWm-yd-EWp" secondAttribute="top" id="HQe-TN-eds"/>
+                                    <constraint firstItem="dAW-vz-MYu" firstAttribute="leading" secondItem="kB4-HP-QIk" secondAttribute="trailing" id="ISj-i4-pnV"/>
+                                    <constraint firstItem="kB4-HP-QIk" firstAttribute="width" secondItem="zWm-yd-EWp" secondAttribute="width" multiplier="0.5" id="Jk6-xp-8b6"/>
+                                    <constraint firstAttribute="bottom" secondItem="2SJ-co-MzG" secondAttribute="bottom" id="Kn9-QM-Qzt"/>
+                                    <constraint firstAttribute="bottom" secondItem="kB4-HP-QIk" secondAttribute="bottom" id="WTa-yD-bdg"/>
+                                    <constraint firstItem="kB4-HP-QIk" firstAttribute="leading" secondItem="zWm-yd-EWp" secondAttribute="leading" id="exV-mb-vPN"/>
+                                    <constraint firstItem="2SJ-co-MzG" firstAttribute="width" secondItem="kB4-HP-QIk" secondAttribute="width" id="gzK-3Q-DyT"/>
+                                    <constraint firstItem="dAW-vz-MYu" firstAttribute="top" secondItem="zWm-yd-EWp" secondAttribute="top" id="nxP-nL-pJP"/>
+                                    <constraint firstAttribute="trailing" secondItem="dAW-vz-MYu" secondAttribute="trailing" id="p80-08-iIs"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="osY-ih-mvZ">
+                                <rect key="frame" x="0.0" y="49" width="375" height="505"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lSG-hG-zMe">
+                                    <size key="itemSize" width="372" height="503"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InboxCell" id="Ppg-Jf-1kA" customClass="InboxCell" customModule="YoutubeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="372" height="503"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="372" height="503"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-Wu-GRA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="372" height="503"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </tableView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="riQ-Wu-GRA" firstAttribute="top" secondItem="Ppg-Jf-1kA" secondAttribute="top" id="RZG-kK-Q1i"/>
+                                            <constraint firstAttribute="bottom" secondItem="riQ-Wu-GRA" secondAttribute="bottom" id="XDA-s8-ppe"/>
+                                            <constraint firstItem="riQ-Wu-GRA" firstAttribute="leading" secondItem="Ppg-Jf-1kA" secondAttribute="leading" id="dDw-a1-LrF"/>
+                                            <constraint firstAttribute="trailing" secondItem="riQ-Wu-GRA" secondAttribute="trailing" id="lnw-Ef-Obt"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="inboxTableView" destination="riQ-Wu-GRA" id="vYb-f8-i4E"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="hKw-86-aTv" id="nZq-V6-El5"/>
+                                    <outlet property="delegate" destination="hKw-86-aTv" id="HZr-Zn-Y9e"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zWm-yd-EWp" firstAttribute="trailing" secondItem="QPF-J2-Ivb" secondAttribute="trailing" id="Cli-WZ-PzR"/>
+                            <constraint firstItem="osY-ih-mvZ" firstAttribute="trailing" secondItem="QPF-J2-Ivb" secondAttribute="trailing" id="Eu4-id-Lb9"/>
+                            <constraint firstItem="zWm-yd-EWp" firstAttribute="top" secondItem="QPF-J2-Ivb" secondAttribute="top" id="G3N-ue-fHR"/>
+                            <constraint firstItem="osY-ih-mvZ" firstAttribute="top" secondItem="zWm-yd-EWp" secondAttribute="bottom" id="SZc-Z0-U7x"/>
+                            <constraint firstItem="zWm-yd-EWp" firstAttribute="leading" secondItem="QPF-J2-Ivb" secondAttribute="leading" id="bpH-pb-wYG"/>
+                            <constraint firstItem="QPF-J2-Ivb" firstAttribute="bottom" secondItem="osY-ih-mvZ" secondAttribute="bottom" id="h4d-7J-aRd"/>
+                            <constraint firstItem="osY-ih-mvZ" firstAttribute="leading" secondItem="QPF-J2-Ivb" secondAttribute="leading" id="t6F-Nt-mAP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QPF-J2-Ivb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tsk-bA-dYs">
+                        <barButtonItem key="leftBarButtonItem" image="youtubeLogo" id="8MW-M4-7Bp"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="profile" id="bNf-vA-2OX">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                            <barButtonItem image="search" id="hnr-oN-QOt">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="video" id="XZn-jL-x8p">
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="osY-ih-mvZ" id="Ptj-Z9-YYY"/>
+                        <outlet property="movingView" destination="2SJ-co-MzG" id="OrU-M1-seV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxW-24-LEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237.5999999999999" y="597.75112443778119"/>
+        </scene>
+        <!--Subscriptions-->
+        <scene sceneID="EIf-0Z-j1G">
+            <objects>
+                <navigationController id="xLb-lo-4j6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Subscriptions" image="subscriptions" id="o3c-BP-PfJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="C0O-vU-Mn0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KuI-9g-GgP" kind="relationship" relationship="rootViewController" id="BL5-KM-whv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yB8-bX-rQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="-89"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Library" width="36" height="36"/>
+        <image name="back" width="36" height="36"/>
+        <image name="home" width="36" height="36"/>
+        <image name="inbox" width="36" height="36"/>
+        <image name="more" width="36" height="36"/>
+        <image name="profile" width="36" height="36"/>
+        <image name="search" width="36" height="36"/>
+        <image name="subscriptions" width="36" height="36"/>
+        <image name="trending" width="36" height="36"/>
+        <image name="video" width="36" height="36"/>
+        <image name="youtubeLogo" width="128" height="30"/>
+    </resources>
 </document>

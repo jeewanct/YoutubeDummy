@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LibraryRecentCell" rowHeight="209" id="W25-u6-UEn" customClass="LibraryRecentCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W25-u6-UEn" id="DjL-aa-8xD">
+                <rect key="frame" x="0.0" y="0.0" width="441" height="208.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XI-I7-8bE">
+                        <rect key="frame" x="16" y="16" width="54" height="28.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pdJ-62-GMZ">
+                        <rect key="frame" x="0.0" y="52.5" width="441" height="140"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="Pho-Xq-vlT"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VwE-O8-XE1">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7XI-I7-8bE" firstAttribute="top" secondItem="DjL-aa-8xD" secondAttribute="top" constant="16" id="6Tv-6j-ngC"/>
+                    <constraint firstItem="7XI-I7-8bE" firstAttribute="leading" secondItem="DjL-aa-8xD" secondAttribute="leading" constant="16" id="HGN-uh-6e2"/>
+                    <constraint firstItem="pdJ-62-GMZ" firstAttribute="leading" secondItem="DjL-aa-8xD" secondAttribute="leading" id="Vjv-Gq-jO3"/>
+                    <constraint firstItem="pdJ-62-GMZ" firstAttribute="top" secondItem="7XI-I7-8bE" secondAttribute="bottom" constant="8" id="Ymn-WG-lSq"/>
+                    <constraint firstAttribute="trailing" secondItem="pdJ-62-GMZ" secondAttribute="trailing" id="mvX-B8-Avl"/>
+                    <constraint firstAttribute="bottom" secondItem="pdJ-62-GMZ" secondAttribute="bottom" constant="16" id="yM6-b6-Jc4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="pdJ-62-GMZ" id="ZmE-0q-Fk8"/>
+            </connections>
+            <point key="canvasLocation" x="232.80000000000001" y="114.69265367316342"/>
+        </tableViewCell>
+    </objects>
+</document>

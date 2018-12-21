@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TrendingCell" rowHeight="100" id="2n5-NQ-KmB" customClass="TrendingCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2n5-NQ-KmB" id="aTl-ka-P4k">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Fz1-CL-SEI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="100.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="qBT-P2-udj"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Vf9-Yp-7Rs">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fz1-CL-SEI" firstAttribute="top" secondItem="aTl-ka-P4k" secondAttribute="top" id="BVp-2t-Tan"/>
+                    <constraint firstAttribute="bottom" secondItem="Fz1-CL-SEI" secondAttribute="bottom" id="CcJ-k9-MGc"/>
+                    <constraint firstAttribute="trailing" secondItem="Fz1-CL-SEI" secondAttribute="trailing" id="njv-OG-nXe"/>
+                    <constraint firstItem="Fz1-CL-SEI" firstAttribute="leading" secondItem="aTl-ka-P4k" secondAttribute="leading" id="qb5-Wg-aBk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="trendingCollectionView" destination="Fz1-CL-SEI" id="0VR-wq-1Qi"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="73.763118440779621"/>
+        </tableViewCell>
+    </objects>
+</document>

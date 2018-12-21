@@ -8,20 +8,112 @@
 
 /* Begin PBXBuildFile section */
 		DBB9DB4621C6962E006FB4F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB4521C6962E006FB4F5 /* AppDelegate.swift */; };
-		DBB9DB4821C6962E006FB4F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB4721C6962E006FB4F5 /* ViewController.swift */; };
 		DBB9DB4B21C6962E006FB4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB4921C6962E006FB4F5 /* Main.storyboard */; };
 		DBB9DB4D21C69630006FB4F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB4C21C69630006FB4F5 /* Assets.xcassets */; };
 		DBB9DB5021C69630006FB4F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB4E21C69630006FB4F5 /* LaunchScreen.storyboard */; };
+		DBB9DB6021C696AC006FB4F5 /* YoutubeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB5F21C696AC006FB4F5 /* YoutubeProtocols.swift */; };
+		DBB9DB6221C69A35006FB4F5 /* YoutubeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB6121C69A35006FB4F5 /* YoutubeController.swift */; };
+		DBB9DB6421C69AAA006FB4F5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB6321C69AAA006FB4F5 /* HomeController.swift */; };
+		DBB9DB6621C69AB4006FB4F5 /* TrendingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB6521C69AB4006FB4F5 /* TrendingController.swift */; };
+		DBB9DB6821C69AC0006FB4F5 /* SubscriptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB6721C69AC0006FB4F5 /* SubscriptionsController.swift */; };
+		DBB9DB6A21C69ACB006FB4F5 /* InboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB6921C69ACB006FB4F5 /* InboxController.swift */; };
+		DBB9DB6C21C69AD8006FB4F5 /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB6B21C69AD8006FB4F5 /* LibraryController.swift */; };
+		DBB9DB6F21C6A228006FB4F5 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB6E21C6A228006FB4F5 /* HomeCell.xib */; };
+		DBB9DB7121C6A54B006FB4F5 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB7021C6A54B006FB4F5 /* HomeCell.swift */; };
+		DBB9DB7321C6AE79006FB4F5 /* TrendingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB7221C6AE79006FB4F5 /* TrendingCell.xib */; };
+		DBB9DB7521C6B123006FB4F5 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB7421C6B123006FB4F5 /* TrendingCell.swift */; };
+		DBB9DB7721C6BC5B006FB4F5 /* TrendingCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB7621C6BC5B006FB4F5 /* TrendingCollectionCell.xib */; };
+		DBB9DB7921C6BC94006FB4F5 /* TrendingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB7821C6BC94006FB4F5 /* TrendingCollectionCell.swift */; };
+		DBB9DB7D21C6CB33006FB4F5 /* InboxMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB7C21C6CB33006FB4F5 /* InboxMessageCell.xib */; };
+		DBB9DB7F21C6CC56006FB4F5 /* InboxNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB9DB7E21C6CC56006FB4F5 /* InboxNotificationCell.xib */; };
+		DBB9DB8321C6D3F4006FB4F5 /* InboxMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB8221C6D3F4006FB4F5 /* InboxMessageCell.swift */; };
+		DBB9DB8521C6D41B006FB4F5 /* InboxNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB8421C6D41B006FB4F5 /* InboxNotificationCell.swift */; };
+		DBB9DB8721C6D727006FB4F5 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB9DB8621C6D727006FB4F5 /* InboxCell.swift */; };
+		DBE866C021C72FA20077B1FF /* SubscriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE866BF21C72FA20077B1FF /* SubscriptionCell.xib */; };
+		DBE866C221C732600077B1FF /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866C121C732600077B1FF /* SubscriptionCell.swift */; };
+		DBE866C421C735E30077B1FF /* ChannelListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866C321C735E30077B1FF /* ChannelListController.swift */; };
+		DBE866C621C736150077B1FF /* ChannelListRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866C521C736150077B1FF /* ChannelListRoute.swift */; };
+		DBE866C821C736C70077B1FF /* ChannelListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866C721C736C70077B1FF /* ChannelListPresenter.swift */; };
+		DBE866CA21C7374F0077B1FF /* ChannelListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866C921C7374F0077B1FF /* ChannelListInteractor.swift */; };
+		DBE866CC21C754730077B1FF /* ChannelListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE866CB21C754730077B1FF /* ChannelListCell.xib */; };
+		DBE866CE21C754FA0077B1FF /* ChannelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866CD21C754FA0077B1FF /* ChannelListCell.swift */; };
+		DBE866D021C75BBF0077B1FF /* LibraryRecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE866CF21C75BBF0077B1FF /* LibraryRecentCell.xib */; };
+		DBE866D221C75BD30077B1FF /* LibraryOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE866D121C75BD30077B1FF /* LibraryOptionsCell.xib */; };
+		DBE866D421C75BE70077B1FF /* PlayListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE866D321C75BE70077B1FF /* PlayListCell.xib */; };
+		DBE866D621C75BFD0077B1FF /* LibraryRecentCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBE866D521C75BFD0077B1FF /* LibraryRecentCollectionCell.xib */; };
+		DBE866D821C75D9E0077B1FF /* LibraryRecentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866D721C75D9E0077B1FF /* LibraryRecentCell.swift */; };
+		DBE866DA21C761570077B1FF /* LibraryOptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866D921C761570077B1FF /* LibraryOptionsCell.swift */; };
+		DBE866DC21C7676A0077B1FF /* HomeRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866DB21C7676A0077B1FF /* HomeRoute.swift */; };
+		DBE866DE21C767860077B1FF /* TrendingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866DD21C767860077B1FF /* TrendingRoute.swift */; };
+		DBE866E021C7694A0077B1FF /* SubscriptionRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866DF21C7694A0077B1FF /* SubscriptionRoute.swift */; };
+		DBE866E221C769590077B1FF /* InboxRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866E121C769590077B1FF /* InboxRoute.swift */; };
+		DBE866E421C769640077B1FF /* LibraryRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866E321C769640077B1FF /* LibraryRoute.swift */; };
+		DBE866E621C769710077B1FF /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866E521C769710077B1FF /* HomeInteractor.swift */; };
+		DBE866E821C769800077B1FF /* TrendingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866E721C769800077B1FF /* TrendingInteractor.swift */; };
+		DBE866EA21C769900077B1FF /* SubscriptionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866E921C769900077B1FF /* SubscriptionInteractor.swift */; };
+		DBE866EC21C7699A0077B1FF /* InboxInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866EB21C7699A0077B1FF /* InboxInteractor.swift */; };
+		DBE866EE21C769A50077B1FF /* LibraryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866ED21C769A50077B1FF /* LibraryInteractor.swift */; };
+		DBE866F021C769B30077B1FF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866EF21C769B30077B1FF /* HomePresenter.swift */; };
+		DBE866F221C769BE0077B1FF /* TrendingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866F121C769BE0077B1FF /* TrendingPresenter.swift */; };
+		DBE866F421C769CB0077B1FF /* SubscriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866F321C769CB0077B1FF /* SubscriptionPresenter.swift */; };
+		DBE866F621C769DB0077B1FF /* InboxPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866F521C769DB0077B1FF /* InboxPresenter.swift */; };
+		DBE866F821C769E40077B1FF /* LibraryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE866F721C769E40077B1FF /* LibraryPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBB9DB4221C6962E006FB4F5 /* YoutubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB9DB4521C6962E006FB4F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBB9DB4721C6962E006FB4F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBB9DB4A21C6962E006FB4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBB9DB4C21C69630006FB4F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB9DB4F21C69630006FB4F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBB9DB5121C69630006FB4F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB9DB5F21C696AC006FB4F5 /* YoutubeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeProtocols.swift; sourceTree = "<group>"; };
+		DBB9DB6121C69A35006FB4F5 /* YoutubeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeController.swift; sourceTree = "<group>"; };
+		DBB9DB6321C69AAA006FB4F5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		DBB9DB6521C69AB4006FB4F5 /* TrendingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingController.swift; sourceTree = "<group>"; };
+		DBB9DB6721C69AC0006FB4F5 /* SubscriptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsController.swift; sourceTree = "<group>"; };
+		DBB9DB6921C69ACB006FB4F5 /* InboxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxController.swift; sourceTree = "<group>"; };
+		DBB9DB6B21C69AD8006FB4F5 /* LibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
+		DBB9DB6E21C6A228006FB4F5 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		DBB9DB7021C6A54B006FB4F5 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		DBB9DB7221C6AE79006FB4F5 /* TrendingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingCell.xib; sourceTree = "<group>"; };
+		DBB9DB7421C6B123006FB4F5 /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
+		DBB9DB7621C6BC5B006FB4F5 /* TrendingCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingCollectionCell.xib; sourceTree = "<group>"; };
+		DBB9DB7821C6BC94006FB4F5 /* TrendingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCollectionCell.swift; sourceTree = "<group>"; };
+		DBB9DB7C21C6CB33006FB4F5 /* InboxMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxMessageCell.xib; sourceTree = "<group>"; };
+		DBB9DB7E21C6CC56006FB4F5 /* InboxNotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxNotificationCell.xib; sourceTree = "<group>"; };
+		DBB9DB8221C6D3F4006FB4F5 /* InboxMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxMessageCell.swift; sourceTree = "<group>"; };
+		DBB9DB8421C6D41B006FB4F5 /* InboxNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxNotificationCell.swift; sourceTree = "<group>"; };
+		DBB9DB8621C6D727006FB4F5 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
+		DBE866BF21C72FA20077B1FF /* SubscriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionCell.xib; sourceTree = "<group>"; };
+		DBE866C121C732600077B1FF /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
+		DBE866C321C735E30077B1FF /* ChannelListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListController.swift; sourceTree = "<group>"; };
+		DBE866C521C736150077B1FF /* ChannelListRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListRoute.swift; sourceTree = "<group>"; };
+		DBE866C721C736C70077B1FF /* ChannelListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListPresenter.swift; sourceTree = "<group>"; };
+		DBE866C921C7374F0077B1FF /* ChannelListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListInteractor.swift; sourceTree = "<group>"; };
+		DBE866CB21C754730077B1FF /* ChannelListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelListCell.xib; sourceTree = "<group>"; };
+		DBE866CD21C754FA0077B1FF /* ChannelListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListCell.swift; sourceTree = "<group>"; };
+		DBE866CF21C75BBF0077B1FF /* LibraryRecentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryRecentCell.xib; sourceTree = "<group>"; };
+		DBE866D121C75BD30077B1FF /* LibraryOptionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryOptionsCell.xib; sourceTree = "<group>"; };
+		DBE866D321C75BE70077B1FF /* PlayListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListCell.xib; sourceTree = "<group>"; };
+		DBE866D521C75BFD0077B1FF /* LibraryRecentCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryRecentCollectionCell.xib; sourceTree = "<group>"; };
+		DBE866D721C75D9E0077B1FF /* LibraryRecentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRecentCell.swift; sourceTree = "<group>"; };
+		DBE866D921C761570077B1FF /* LibraryOptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryOptionsCell.swift; sourceTree = "<group>"; };
+		DBE866DB21C7676A0077B1FF /* HomeRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRoute.swift; sourceTree = "<group>"; };
+		DBE866DD21C767860077B1FF /* TrendingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRoute.swift; sourceTree = "<group>"; };
+		DBE866DF21C7694A0077B1FF /* SubscriptionRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionRoute.swift; sourceTree = "<group>"; };
+		DBE866E121C769590077B1FF /* InboxRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRoute.swift; sourceTree = "<group>"; };
+		DBE866E321C769640077B1FF /* LibraryRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRoute.swift; sourceTree = "<group>"; };
+		DBE866E521C769710077B1FF /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		DBE866E721C769800077B1FF /* TrendingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingInteractor.swift; sourceTree = "<group>"; };
+		DBE866E921C769900077B1FF /* SubscriptionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionInteractor.swift; sourceTree = "<group>"; };
+		DBE866EB21C7699A0077B1FF /* InboxInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxInteractor.swift; sourceTree = "<group>"; };
+		DBE866ED21C769A50077B1FF /* LibraryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryInteractor.swift; sourceTree = "<group>"; };
+		DBE866EF21C769B30077B1FF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DBE866F121C769BE0077B1FF /* TrendingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingPresenter.swift; sourceTree = "<group>"; };
+		DBE866F321C769CB0077B1FF /* SubscriptionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionPresenter.swift; sourceTree = "<group>"; };
+		DBE866F521C769DB0077B1FF /* InboxPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxPresenter.swift; sourceTree = "<group>"; };
+		DBE866F721C769E40077B1FF /* LibraryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +146,124 @@
 		DBB9DB4421C6962E006FB4F5 /* YoutubeApp */ = {
 			isa = PBXGroup;
 			children = (
+				DBB9DB6121C69A35006FB4F5 /* YoutubeController.swift */,
+				DBB9DB5721C69643006FB4F5 /* Modules */,
 				DBB9DB4521C6962E006FB4F5 /* AppDelegate.swift */,
-				DBB9DB4721C6962E006FB4F5 /* ViewController.swift */,
 				DBB9DB4921C6962E006FB4F5 /* Main.storyboard */,
 				DBB9DB4C21C69630006FB4F5 /* Assets.xcassets */,
 				DBB9DB4E21C69630006FB4F5 /* LaunchScreen.storyboard */,
 				DBB9DB5121C69630006FB4F5 /* Info.plist */,
 			);
 			path = YoutubeApp;
+			sourceTree = "<group>";
+		};
+		DBB9DB5721C69643006FB4F5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9DB6D21C6A207006FB4F5 /* Xibs */,
+				DBB9DB5D21C69682006FB4F5 /* Protocols */,
+				DBB9DB5C21C6967C006FB4F5 /* Entity  */,
+				DBB9DB5B21C69674006FB4F5 /* Interactor */,
+				DBB9DB5A21C6966C006FB4F5 /* Route */,
+				DBB9DB5921C6965F006FB4F5 /* Views */,
+				DBB9DB5821C69658006FB4F5 /* Presenter */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DBB9DB5821C69658006FB4F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DBE866C721C736C70077B1FF /* ChannelListPresenter.swift */,
+				DBE866EF21C769B30077B1FF /* HomePresenter.swift */,
+				DBE866F121C769BE0077B1FF /* TrendingPresenter.swift */,
+				DBE866F321C769CB0077B1FF /* SubscriptionPresenter.swift */,
+				DBE866F521C769DB0077B1FF /* InboxPresenter.swift */,
+				DBE866F721C769E40077B1FF /* LibraryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DBB9DB5921C6965F006FB4F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9DB6321C69AAA006FB4F5 /* HomeController.swift */,
+				DBB9DB6521C69AB4006FB4F5 /* TrendingController.swift */,
+				DBB9DB6721C69AC0006FB4F5 /* SubscriptionsController.swift */,
+				DBB9DB6921C69ACB006FB4F5 /* InboxController.swift */,
+				DBB9DB6B21C69AD8006FB4F5 /* LibraryController.swift */,
+				DBE866C321C735E30077B1FF /* ChannelListController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBB9DB5A21C6966C006FB4F5 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				DBE866C521C736150077B1FF /* ChannelListRoute.swift */,
+				DBE866DB21C7676A0077B1FF /* HomeRoute.swift */,
+				DBE866DD21C767860077B1FF /* TrendingRoute.swift */,
+				DBE866DF21C7694A0077B1FF /* SubscriptionRoute.swift */,
+				DBE866E121C769590077B1FF /* InboxRoute.swift */,
+				DBE866E321C769640077B1FF /* LibraryRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		DBB9DB5B21C69674006FB4F5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DBE866C921C7374F0077B1FF /* ChannelListInteractor.swift */,
+				DBE866E521C769710077B1FF /* HomeInteractor.swift */,
+				DBE866E721C769800077B1FF /* TrendingInteractor.swift */,
+				DBE866E921C769900077B1FF /* SubscriptionInteractor.swift */,
+				DBE866EB21C7699A0077B1FF /* InboxInteractor.swift */,
+				DBE866ED21C769A50077B1FF /* LibraryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DBB9DB5C21C6967C006FB4F5 /* Entity  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Entity ";
+			sourceTree = "<group>";
+		};
+		DBB9DB5D21C69682006FB4F5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9DB5F21C696AC006FB4F5 /* YoutubeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DBB9DB6D21C6A207006FB4F5 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				DBB9DB6E21C6A228006FB4F5 /* HomeCell.xib */,
+				DBB9DB7021C6A54B006FB4F5 /* HomeCell.swift */,
+				DBB9DB7221C6AE79006FB4F5 /* TrendingCell.xib */,
+				DBB9DB7421C6B123006FB4F5 /* TrendingCell.swift */,
+				DBB9DB7621C6BC5B006FB4F5 /* TrendingCollectionCell.xib */,
+				DBB9DB7821C6BC94006FB4F5 /* TrendingCollectionCell.swift */,
+				DBB9DB7C21C6CB33006FB4F5 /* InboxMessageCell.xib */,
+				DBB9DB7E21C6CC56006FB4F5 /* InboxNotificationCell.xib */,
+				DBB9DB8221C6D3F4006FB4F5 /* InboxMessageCell.swift */,
+				DBB9DB8421C6D41B006FB4F5 /* InboxNotificationCell.swift */,
+				DBB9DB8621C6D727006FB4F5 /* InboxCell.swift */,
+				DBE866BF21C72FA20077B1FF /* SubscriptionCell.xib */,
+				DBE866C121C732600077B1FF /* SubscriptionCell.swift */,
+				DBE866CB21C754730077B1FF /* ChannelListCell.xib */,
+				DBE866CD21C754FA0077B1FF /* ChannelListCell.swift */,
+				DBE866CF21C75BBF0077B1FF /* LibraryRecentCell.xib */,
+				DBE866D121C75BD30077B1FF /* LibraryOptionsCell.xib */,
+				DBE866D321C75BE70077B1FF /* PlayListCell.xib */,
+				DBE866D521C75BFD0077B1FF /* LibraryRecentCollectionCell.xib */,
+				DBE866D721C75D9E0077B1FF /* LibraryRecentCell.swift */,
+				DBE866D921C761570077B1FF /* LibraryOptionsCell.swift */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +324,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE866D221C75BD30077B1FF /* LibraryOptionsCell.xib in Resources */,
+				DBE866C021C72FA20077B1FF /* SubscriptionCell.xib in Resources */,
+				DBB9DB7D21C6CB33006FB4F5 /* InboxMessageCell.xib in Resources */,
+				DBB9DB7F21C6CC56006FB4F5 /* InboxNotificationCell.xib in Resources */,
+				DBB9DB7321C6AE79006FB4F5 /* TrendingCell.xib in Resources */,
+				DBE866D421C75BE70077B1FF /* PlayListCell.xib in Resources */,
 				DBB9DB5021C69630006FB4F5 /* LaunchScreen.storyboard in Resources */,
 				DBB9DB4D21C69630006FB4F5 /* Assets.xcassets in Resources */,
+				DBB9DB6F21C6A228006FB4F5 /* HomeCell.xib in Resources */,
+				DBB9DB7721C6BC5B006FB4F5 /* TrendingCollectionCell.xib in Resources */,
+				DBE866D621C75BFD0077B1FF /* LibraryRecentCollectionCell.xib in Resources */,
 				DBB9DB4B21C6962E006FB4F5 /* Main.storyboard in Resources */,
+				DBE866CC21C754730077B1FF /* ChannelListCell.xib in Resources */,
+				DBE866D021C75BBF0077B1FF /* LibraryRecentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +348,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB9DB4821C6962E006FB4F5 /* ViewController.swift in Sources */,
+				DBB9DB6821C69AC0006FB4F5 /* SubscriptionsController.swift in Sources */,
+				DBB9DB6A21C69ACB006FB4F5 /* InboxController.swift in Sources */,
+				DBE866EE21C769A50077B1FF /* LibraryInteractor.swift in Sources */,
+				DBE866C821C736C70077B1FF /* ChannelListPresenter.swift in Sources */,
+				DBB9DB7921C6BC94006FB4F5 /* TrendingCollectionCell.swift in Sources */,
+				DBB9DB7521C6B123006FB4F5 /* TrendingCell.swift in Sources */,
+				DBB9DB6421C69AAA006FB4F5 /* HomeController.swift in Sources */,
+				DBE866E021C7694A0077B1FF /* SubscriptionRoute.swift in Sources */,
+				DBB9DB8721C6D727006FB4F5 /* InboxCell.swift in Sources */,
+				DBB9DB6C21C69AD8006FB4F5 /* LibraryController.swift in Sources */,
+				DBE866DE21C767860077B1FF /* TrendingRoute.swift in Sources */,
+				DBE866C221C732600077B1FF /* SubscriptionCell.swift in Sources */,
+				DBB9DB6621C69AB4006FB4F5 /* TrendingController.swift in Sources */,
+				DBE866D821C75D9E0077B1FF /* LibraryRecentCell.swift in Sources */,
+				DBB9DB6021C696AC006FB4F5 /* YoutubeProtocols.swift in Sources */,
 				DBB9DB4621C6962E006FB4F5 /* AppDelegate.swift in Sources */,
+				DBB9DB8321C6D3F4006FB4F5 /* InboxMessageCell.swift in Sources */,
+				DBE866CE21C754FA0077B1FF /* ChannelListCell.swift in Sources */,
+				DBE866F421C769CB0077B1FF /* SubscriptionPresenter.swift in Sources */,
+				DBE866EA21C769900077B1FF /* SubscriptionInteractor.swift in Sources */,
+				DBE866E821C769800077B1FF /* TrendingInteractor.swift in Sources */,
+				DBE866CA21C7374F0077B1FF /* ChannelListInteractor.swift in Sources */,
+				DBE866F021C769B30077B1FF /* HomePresenter.swift in Sources */,
+				DBE866DA21C761570077B1FF /* LibraryOptionsCell.swift in Sources */,
+				DBE866DC21C7676A0077B1FF /* HomeRoute.swift in Sources */,
+				DBE866C621C736150077B1FF /* ChannelListRoute.swift in Sources */,
+				DBB9DB7121C6A54B006FB4F5 /* HomeCell.swift in Sources */,
+				DBB9DB6221C69A35006FB4F5 /* YoutubeController.swift in Sources */,
+				DBE866F221C769BE0077B1FF /* TrendingPresenter.swift in Sources */,
+				DBE866E421C769640077B1FF /* LibraryRoute.swift in Sources */,
+				DBB9DB8521C6D41B006FB4F5 /* InboxNotificationCell.swift in Sources */,
+				DBE866F821C769E40077B1FF /* LibraryPresenter.swift in Sources */,
+				DBE866E221C769590077B1FF /* InboxRoute.swift in Sources */,
+				DBE866EC21C7699A0077B1FF /* InboxInteractor.swift in Sources */,
+				DBE866C421C735E30077B1FF /* ChannelListController.swift in Sources */,
+				DBE866E621C769710077B1FF /* HomeInteractor.swift in Sources */,
+				DBE866F621C769DB0077B1FF /* InboxPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrendingCollectionCell" id="3kA-gl-Xgd" customClass="TrendingCollectionCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="le5-Yr-FhQ">
+                        <rect key="frame" x="35" y="8" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="C4c-ok-zx3"/>
+                            <constraint firstAttribute="width" constant="60" id="s4W-b2-3tJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIX-kf-vv0">
+                        <rect key="frame" x="48.5" y="72" width="33.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="le5-Yr-FhQ" firstAttribute="top" secondItem="3kA-gl-Xgd" secondAttribute="top" constant="8" id="1o8-5C-CqT"/>
+                <constraint firstItem="MIX-kf-vv0" firstAttribute="top" secondItem="le5-Yr-FhQ" secondAttribute="bottom" constant="4" id="8LD-b9-2Q2"/>
+                <constraint firstItem="MIX-kf-vv0" firstAttribute="centerX" secondItem="le5-Yr-FhQ" secondAttribute="centerX" id="Ia6-JR-aZI"/>
+                <constraint firstItem="le5-Yr-FhQ" firstAttribute="centerX" secondItem="3kA-gl-Xgd" secondAttribute="centerX" id="mt2-YM-wd2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="eKc-jN-AXM"/>
+            <size key="customSize" width="130" height="95"/>
+            <connections>
+                <outlet property="trendingOptionImage" destination="le5-Yr-FhQ" id="awP-bZ-ddh"/>
+                <outlet property="trendingOptionTitle" destination="MIX-kf-vv0" id="YTu-0P-045"/>
+            </connections>
+            <point key="canvasLocation" x="121.59999999999999" y="244.22788605697153"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="36" height="36"/>
+    </resources>
+</document>

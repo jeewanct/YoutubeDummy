@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubscriptionCell" rowHeight="100" id="Znq-fq-GjL" customClass="SubscriptionCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Znq-fq-GjL" id="uK2-is-l31">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-Ge-LzW">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="100.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="379-wt-VeB"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z55-rl-cyR">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVH-Xk-Qaj">
+                        <rect key="frame" x="346" y="35.5" width="30" height="30"/>
+                        <state key="normal" title="ALL">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="handleAll:" destination="Znq-fq-GjL" eventType="touchUpInside" id="fQA-kG-3y8"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LVH-Xk-Qaj" firstAttribute="centerY" secondItem="gNq-Ge-LzW" secondAttribute="centerY" id="5Id-sp-VBW"/>
+                    <constraint firstItem="gNq-Ge-LzW" firstAttribute="leading" secondItem="uK2-is-l31" secondAttribute="leading" id="C1e-D5-lSQ"/>
+                    <constraint firstAttribute="trailing" secondItem="LVH-Xk-Qaj" secondAttribute="trailing" constant="16" id="dq3-sH-dkK"/>
+                    <constraint firstItem="gNq-Ge-LzW" firstAttribute="top" secondItem="uK2-is-l31" secondAttribute="top" id="eOy-zZ-ZJ4"/>
+                    <constraint firstItem="LVH-Xk-Qaj" firstAttribute="leading" secondItem="gNq-Ge-LzW" secondAttribute="trailing" constant="8" id="h3Q-Pj-c3D"/>
+                    <constraint firstAttribute="bottom" secondItem="gNq-Ge-LzW" secondAttribute="bottom" id="iMs-rG-GwA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subscriptionCollectionView" destination="gNq-Ge-LzW" id="DXa-a7-xfa"/>
+            </connections>
+            <point key="canvasLocation" x="142.40000000000001" y="4.0479760119940034"/>
+        </tableViewCell>
+    </objects>
+</document>
